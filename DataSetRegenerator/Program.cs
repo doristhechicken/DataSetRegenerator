@@ -41,7 +41,7 @@ namespace MDWTypedDataSetGenerator
 				return;
 			}
 
-			if (!argitems.GetArgItem("out").Specified) argitems["out"] = Path.ChangeExtension(argitems["in"], ".designer.testcreate.cs");
+			if (!argitems.GetArgItem("out").Specified) argitems["out"] = Path.ChangeExtension(argitems["in"], ".designer.cs");
 			if (!argitems.GetArgItem("namespace").Specified) argitems["namespace"] = Path.GetFileNameWithoutExtension(argitems["in"]);
 
 			StreamReader sr = null;
